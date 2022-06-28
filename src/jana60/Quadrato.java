@@ -16,6 +16,17 @@ public class Quadrato implements Poligono {
 		}
 	}
 	
+	
+	
+	public double getLato() {
+		return lato;
+	}
+
+	public void setLato(double lato) {
+		valoriNegativi(lato);
+		this.lato = lato;
+	}
+
 	@Override
 	public double calcolaArea() {
 		return lato * 2;
